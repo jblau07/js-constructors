@@ -59,7 +59,8 @@ function DamageSpell(name, cost, damage, description) {
   this.damage = damage
 }
 
-DamageSpell.prototype = Object.create(Spell.prototype)
+DamageSpell.prototype = Object.create(Spell.prototype);
+DamageSpell.prototype.constructor = DamageSpell;
 
 /**
  * Now that you've created some spells, let's create
